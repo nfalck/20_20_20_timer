@@ -53,6 +53,6 @@ To run this application, you need to have at least Python 3.11 installed on your
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
-- Inspired by the 20-20-20 rule for eye-care during computer use.
-- Used a video by [Codemy.com}(https://www.youtube.com/watch?v=djDcVWbEYoE) to learn how to add sound.
+- Inspired by the 20-20-20 rule for eye care during computer use.
+- Used a video by [Codemy.com](https://www.youtube.com/watch?v=djDcVWbEYoE) to learn how to add sound.
 - Used the skills that I learned from the Pomodoro Timer project in "100 Days of Code: The Complete Python Pro Bootcamp for 2023" by Dr. Angela Yu
