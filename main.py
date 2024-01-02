@@ -92,7 +92,7 @@ class MainApplication(tk.Tk):
         reps += 1
 
         # Durations of work and break time
-        work_min = 1
+        work_min = 20
         global work_sec
         work_sec = work_min * 60
         global break_sec
