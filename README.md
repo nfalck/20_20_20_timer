@@ -23,13 +23,13 @@ To run this application, you need to have at least Python 3.11 installed on your
    - Navigate to the directory where you want to clone the repository.
    - Run the following command:
      ```shell
-     git clone https://github.com/nattataa/20-20-20-timer.git
+     git clone https://github.com/nfalck/20_20_20_timer.git
      ```
 
 2. **Navigate to the Project Folder**:
    - Change the directory to the project folder:
      ```shell
-     cd 20-20-20-timer
+     cd 20_20_20_timer
      ```
 
 3. **Install Dependencies**:
