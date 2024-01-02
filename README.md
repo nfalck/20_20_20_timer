@@ -2,9 +2,9 @@
 
 ## Overview
 
-Using what I have learned about Tkinter from 100 days of Python course by Dr. Angela Yu, I decided to make a simple timer that can help you with the 20-20-20 rule.
-A messagebox every 20 minutes will pop up, prompting you to look away for 20 seconds and afterwards reset again to 20 minutes of work. 
-I wanted to make this timer as it would be useful for me who often work long hours on my computer and wanted a way to remind me to take care of my eyes, whilst at the same time practising my coding skills. 
+Using what I have learned about Tkinter from the 100 Days of Python course by Dr. Angela Yu, I decided to make a simple timer that can help you with the 20-20-20 rule.
+- A message box every 20 minutes will pop up, prompting you to look away for 20 seconds and afterward reset again to 20 minutes of work. 
+- I wanted to make this timer as it would be useful for me, who often works long hours on my computer and wanted a way to remind me to take care of my eyes, whilst at the same time practicing my coding skills. 
 
 ## Features
 
