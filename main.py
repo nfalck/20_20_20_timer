@@ -3,6 +3,7 @@ from PIL import Image, ImageTk
 import math
 from tkinter import messagebox
 import pygame
+import platform
 
 # Background color of the timer window
 background_color = "#2c2f35"
@@ -42,16 +43,31 @@ class MainApplication(tk.Tk):
         self.timer_label.grid(row=2, column=0, columnspan=3, pady=30)
 
         # Button that will start the timer
-        self.start_button = tk.Button(text="Start", highlightthickness=0, bg="#d0ed87", command=self.start_timer)
-        self.start_button.grid(row=3, column=0, pady=10)
+        if platform.system() == "Darwin":
+            #  if the user uses Mac, another type of button will be used to show colors on the buttons
+            from tkmacosx import Button
+            self.start_button = Button(text="Start", borderless=1, highlightthickness=0,
+                                       bg="#d0ed87", command=self.start_timer)
+            self.start_button.grid(row=3, column=0, pady=10)
+        else:
+            # For Windows and Linux
+            self.start_button = tk.Button(text="Start", highlightthickness=0, bg="#d0ed87", command=self.start_timer)
+            self.start_button.grid(row=3, column=0, pady=10)
 
         # To get space between the buttons and be able to center the eye image
         self.space_label = tk.Label(bg=background_color)
         self.space_label.grid(row=3, column=1, pady=10)
 
         # Button that will reset the timer
-        self.reset_button = tk.Button(text="Reset", highlightthickness=0, bg="#c63958", command=self.reset_timer)
-        self.reset_button.grid(row=3, column=2, pady=10)
+        if platform.system() == "Darwin":
+            #  if the user uses Mac, another type of button will be used to show colors on the buttons
+            self.reset_button = Button(text="Reset", borderless=1, highlightthickness=0,
+                                       bg="#c63958", command=self.reset_timer)
+            self.reset_button.grid(row=3, column=2, pady=10)
+        else:
+            # For Windows and Linux
+            self.reset_button = tk.Button(text="Reset", highlightthickness=0, bg="#c63958", command=self.reset_timer)
+            self.reset_button.grid(row=3, column=2, pady=10)
 
         # An image of a eye
         self.eye_image_open = Image.open("eye.png")
