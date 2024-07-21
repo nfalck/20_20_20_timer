@@ -16,6 +16,13 @@ Using what I have learned about Tkinter from the 100 Days of Python course by Dr
 
 To run this application, you need to have at least Python 3.11 installed on your computer. You can download Python from [python.org](https://www.python.org/downloads/).
 
+You also need to install the packages pillow and pygame. You can do this by installing them separately or by:
+
+```shell
+pip install -r requirements.txt
+```
+
+
 ## How to Run
 
 1. **Clone the Repository**: 
