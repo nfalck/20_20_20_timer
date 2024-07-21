@@ -42,6 +42,7 @@ To run this application, you need to have at least Python 3.11 installed on your
      ```
 
 5. **Interact with the Application**:
+![](linuxdemo.png)
    - Click on the "Start Timer" button in order to start the timer.
    - Click on the "Reset Timer" button in order to reset it or to remove focus of the window when it is break time, and you urgently need to get the window away. 
 
