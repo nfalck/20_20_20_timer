@@ -21,6 +21,7 @@ reps = 0
 # Initialize the sound mixer
 pygame.mixer.init()
 
+
 class MainApplication(tk.Tk):
     """
     This class represents the main application of the timer. It manages the user interface and timer functionality,
@@ -36,7 +37,8 @@ class MainApplication(tk.Tk):
         self.timer_running = False
 
         #  Layout of the timer program with title, timer and buttons
-        self.timer_title = tk.Label(text="20-20-20 Timer", fg=text_color, bg=background_color, font=(font_name, 30), padx=220)
+        self.timer_title = tk.Label(text="20-20-20 Timer", fg=text_color, bg=background_color, font=(font_name, 30),
+                                    padx=220)
         self.timer_title.grid(row=0, column=0, columnspan=3)
 
         self.timer_label = tk.Label(text="00:00", fg=text_color, bg=background_color, font=(font_name, 25))
@@ -69,7 +71,7 @@ class MainApplication(tk.Tk):
             self.reset_button = tk.Button(text="Reset", highlightthickness=0, bg="#c63958", command=self.reset_timer)
             self.reset_button.grid(row=3, column=2, pady=10)
 
-        # An image of a eye
+        # An image of an eye
         self.eye_image_open = Image.open("eye.png")
         self.eye_image = ImageTk.PhotoImage(self.eye_image_open)
         self.eye = tk.Label(image=self.eye_image, bg=background_color)
@@ -80,6 +82,7 @@ class MainApplication(tk.Tk):
         # To play notification at pop-up
         pygame.mixer.music.load("notificationsound.mp3")
         pygame.mixer.music.play(loops=0)
+
     def count_down(self, count):
         # Calculate minutes and seconds
         count_min = math.floor(count / 60)
@@ -100,7 +103,6 @@ class MainApplication(tk.Tk):
         else:
             # Start a new timer cycle when the countdown reaches zero
             self.start_timer()
-
 
     def start_timer(self):
         # Variable to track timer cycles (work and break)
