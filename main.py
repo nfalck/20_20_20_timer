@@ -104,14 +104,24 @@ class MainApplication(tk.Tk):
             self.count_down(work_sec)
         # Inequal reps are work cycles
         elif reps % 2 != 0:
+            # Play the notification sound
+            self.play()
+            # Makes the application pop up, and you cannot click outside of it
+            self.attributes("-topmost", True)
+            self.focus_force()
             # Message that pops up when break is done
             if messagebox.askokcancel("Timer", "Break is up, time to work!"):
+                # The application is no longer focused, and you can click outside of it
+                self.attributes('-topmost', False)
                 # Countdown of work time will start
                 self.count_down(work_sec)
         # Equal reps are break cycles
         else:
             # Play the notification sound
             self.play()
+            # Makes the application pop up, and you cannot click outside of it
+            self.attributes("-topmost", True)
+            self.focus_force()
             # Message that pops up when work is done
             if messagebox.askokcancel("Timer", "Work time is up, look away for 20 seconds!"):
                 # Countdown of break time will start
@@ -120,7 +130,8 @@ class MainApplication(tk.Tk):
     def reset_timer(self):
         # Cancel the current countdown if there is any
         self.after_cancel(timer)
-        # Restore timer label back to 00:00
+        # Restore timer label back to 00:00 and remove focus from window
+        self.attributes('-topmost', False)
         self.timer_label.config(text="00:00")
         # Reset the total cycles to 0
         global reps
