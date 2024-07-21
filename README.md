@@ -43,10 +43,10 @@ To run this application, you need to have at least Python 3.11 installed on your
 
 5. **Interact with the Application**:
    - Click on the "Start Timer" button in order to start the timer.
-   - Click on the "Reset Timer" button in order to reset it. 
+   - Click on the "Reset Timer" button in order to reset it or to remove focus of the window when it is break time, and you urgently need to get the window away. 
 
 6. **Notifications**:
-   - The timer will alternate between work and break intervals, prompting you every 20 minutes to follow the 20-20-20 rule for eye care.
+   - The timer will alternate between work and break intervals, after every 20 minutes you are prompted to follow the 20-20-20 rule for eye care.
 
 ## License
 
