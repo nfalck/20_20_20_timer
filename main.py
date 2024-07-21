@@ -62,7 +62,7 @@ class MainApplication(tk.Tk):
 
     def play(self):
         # To play notification at pop-up
-        pygame.mixer.music.load("notification.mp3")
+        pygame.mixer.music.load("notificationsound.mp3")
         pygame.mixer.music.play(loops=0)
     def count_down(self, count):
         # Calculate minutes and seconds
