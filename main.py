@@ -141,7 +141,7 @@ class MainApplication(tk.Tk):
             self.attributes("-topmost", True)
             self.focus_force()
             # Message that pops up when work is done
-            if messagebox.askokcancel("Timer", "Work time is up, look away for 20 seconds!"):
+            if messagebox.askokcancel("Timer", "Work time is up, look atleast 20 feet/6 meters away for 20 seconds!"):
                 # Countdown of break time will start
                 self.count_down(break_sec)
 
