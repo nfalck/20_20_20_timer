@@ -16,7 +16,7 @@ Using what I have learned about Tkinter from the 100 Days of Python course by Dr
 
 To run this application, you need to have at least Python 3.11 installed on your computer. You can download Python from [python.org](https://www.python.org/downloads/).
 
-You also need to install the packages pillow and pygame. You can do this by installing them separately or by:
+You also need to install the packages pillow, customtkinter and pygame. You can do this by installing them separately or by:
 
 ```shell
 pip install -r requirements.txt
@@ -63,5 +63,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 - Inspired by the 20-20-20 rule for eye care during computer use.
 - Used a video by [Codemy.com](https://www.youtube.com/watch?v=djDcVWbEYoE) to learn how to add sound.
-- Used StackOverflow - [Post 1](https://stackoverflow.com/questions/51014756/changing-color-of-buttons-in-tkinter-works-on-windows-but-not-mac-osx) and [Post 2](https://stackoverflow.com/questions/1854/how-to-identify-which-os-python-is-running-on) to solve the tkinter button issue on MacOS.
+- Used a video by [Tkinter.com](https://www.youtube.com/watch?v=FyPOqu3akDw) to learn how to make new top level windows for the pop-ups.
 - Used the skills that I learned from the Pomodoro Timer project in "100 Days of Code: The Complete Python Pro Bootcamp for 2023" by Dr. Angela Yu
